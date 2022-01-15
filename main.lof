@@ -1,0 +1,32 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1.}{\ignorespaces Diagram różnych rodzajów sieci}}{9}{}%
+\contentsline {figure}{\numberline {2.2.}{\ignorespaces Przykłady topologii sieci, po lewej stronie topologia gwiazdy, po prawej stronie topologia siatki}}{10}{}%
+\contentsline {figure}{\numberline {2.3.}{\ignorespaces Topologia mieszana}}{10}{}%
+\contentsline {figure}{\numberline {2.4.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w paśmie 2,4 GHz}}{12}{}%
+\contentsline {figure}{\numberline {2.5.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w paśmie 5 GHz}}{12}{}%
+\contentsline {figure}{\numberline {2.6.}{\ignorespaces Schemat blokowy opisywanej architektury}}{14}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1.}{\ignorespaces Schemat blokowy systemu IoT z dedykowaną stacją usługową}}{15}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1.}{\ignorespaces Komputer jednopłtykowy Raspberry Pi model 4b użyty do konstrukcji stacji usługowej}}{18}{}%
+\contentsline {figure}{\numberline {4.2.}{\ignorespaces Diagram stosu technologicznego stacji usługowej }}{19}{}%
+\contentsline {figure}{\numberline {4.3.}{\ignorespaces Elementy, które posłużyły do konstrukcji węzła, Arduino UNO i moduł Bluetooth HC-05}}{21}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1.}{\ignorespaces Fragment kodu odpowiedzialny za obsługę żądań przychodzących z serwera}}{22}{}%
+\contentsline {figure}{\numberline {5.2.}{\ignorespaces Zrzut ekranu działającego szkieletu aplikacji}}{23}{}%
+\contentsline {figure}{\numberline {5.3.}{\ignorespaces Szkic bazy danych}}{24}{}%
+\contentsline {figure}{\numberline {5.4.}{\ignorespaces Schemat blokowy algorytmu do nawiązywania łączności bezprzewodowej poprzez\,Bluetooth}}{25}{}%
+\contentsline {figure}{\numberline {5.5.}{\ignorespaces Schemat połączeń elektrycznych węzła sieci}}{26}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1.}{\ignorespaces Schemat środowiska testowego nr 1.}}{28}{}%
+\contentsline {figure}{\numberline {6.2.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika.}}{29}{}%
+\contentsline {figure}{\numberline {6.3.}{\ignorespaces Widok dodawania nowego węzła.}}{30}{}%
+\contentsline {figure}{\numberline {6.4.}{\ignorespaces Widok dodawania nowego węzła po wpisaniu adresu MAC.}}{31}{}%
+\contentsline {figure}{\numberline {6.5.}{\ignorespaces Komunikat informujący o pomyślnym dodaniu węzła.}}{31}{}%
+\contentsline {figure}{\numberline {6.6.}{\ignorespaces Widok zarządzania węzłami}}{32}{}%
+\contentsline {figure}{\numberline {6.7.}{\ignorespaces Widok szczegółów dotyczących danego węzła}}{32}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
