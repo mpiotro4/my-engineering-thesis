@@ -24,8 +24,10 @@
 \contentsline {section}{\numberline {5.4\relax .\enspace }Węzeł}{25}{}%
 \contentsline {chapter}{\numberline {6\relax .\enspace }Testowanie}{27}{}%
 \contentsline {section}{\numberline {6.1\relax .\enspace }Testy niezawodności łączności bezprzewodowej}{27}{}%
-\contentsline {section}{\numberline {6.2\relax .\enspace }Testy wersji demonstracyjnej stacji usługowej}{30}{}%
-\contentsline {chapter}{\numberline {7\relax .\enspace }Podsumowanie}{33}{}%
-\contentsline {chapter}{Bibliografia}{34}{}%
-\contentsline {chapter}{Spis rysunk\'ow}{35}{}%
-\contentsline {chapter}{Spis tabel}{36}{}%
+\contentsline {subsection}{\numberline {6.1.1\relax .\enspace }Układ pomiarowy}{27}{}%
+\contentsline {subsection}{\numberline {6.1.2\relax .\enspace }Środowisko testowe}{27}{}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Testy wersji demonstracyjnej stacji usługowej}{31}{}%
+\contentsline {chapter}{\numberline {7\relax .\enspace }Podsumowanie}{35}{}%
+\contentsline {chapter}{Bibliografia}{36}{}%
+\contentsline {chapter}{Spis rysunk\'ow}{37}{}%
+\contentsline {chapter}{Spis tabel}{38}{}%

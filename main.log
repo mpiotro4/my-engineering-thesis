@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  15 JAN 2022 21:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  18 JAN 2022 23:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -374,7 +374,68 @@ f,BoldItalicFont=arialbi.ttf].
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 \c@theorem=\count316
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -388,8 +449,7 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
 6.
-
-(C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+ (C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -541,31 +601,31 @@ File: ./pdfs/2strona.pdf Graphic file (type pdf)
 Overfull \vbox (79.36803pt too high) has occurred while \output is active []
 
 
-[3] (main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
+[3] (main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
 
- [4
-
-]
-Rozdzia\PlPrIeC {\l } 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 196
-.
 (C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 196
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 19
-6.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
+
 
 (C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
+))
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+
+[4
+
+]
+Rozdzia\PlPrIeC {\l } 1.
 [5
 
 
@@ -713,10 +773,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Rozdzia\PlPrIeC {\l } 6.
 File: ./images//mieszkanke.jpg Graphic file (type bmp)
 <./images//mieszkanke.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
+[27
 
 ]
 File: ./images//bt.jpg Graphic file (type bmp)
@@ -727,30 +784,38 @@ File: ./images//2,4Ghz.jpg Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Overfull \hbox (22.30087pt too wide) in paragraph at lines 544--555
+File: ./images//dom1pietro.jpg Graphic file (type bmp)
+<./images//dom1pietro.jpg>
+File: ./images//dom2pietro.jpg Graphic file (type bmp)
+<./images//dom2pietro.jpg>
+File: ./images//2,4Ghz_Dom.jpg Graphic file (type bmp)
+<./images//2,4Ghz_Dom.jpg>
+
+Overfull \hbox (48.80908pt too wide) in paragraph at lines 568--569
  [][] 
  []
 
-[29]
+
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+ [29]
+File: ./images//bt_dom.jpg Graphic file (type bmp)
+<./images//bt_dom.jpg>
+
+Overfull \hbox (27.15878pt too wide) in paragraph at lines 573--574
+ [][] 
+ []
+
+
+Overfull \hbox (22.30087pt too wide) in paragraph at lines 579--590
+ [][] 
+ []
+
+[30]
 File: ./images//test1.jpg Graphic file (type bmp)
 <./images//test1.jpg>
 
-Overfull \hbox (11.49849pt too wide) in paragraph at lines 569--570
- [][] 
- []
-
-File: ./images//test2.jpg Graphic file (type bmp)
-<./images//test2.jpg>
-File: ./images//test3.jpg Graphic file (type bmp)
-<./images//test3.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-File: ./images//test4.jpg Graphic file (type bmp)
-<./images//test4.jpg>
-
-Overfull \hbox (11.8749pt too wide) in paragraph at lines 590--591
+Overfull \hbox (11.49849pt too wide) in paragraph at lines 604--605
  [][] 
  []
 
@@ -758,61 +823,80 @@ Overfull \hbox (11.8749pt too wide) in paragraph at lines 590--591
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-File: ./images//test5.jpg Graphic file (type bmp)
-<./images//test5.jpg>
+File: ./images//test2.jpg Graphic file (type bmp)
+<./images//test2.jpg>
+File: ./images//test3.jpg Graphic file (type bmp)
+<./images//test3.jpg>
 
-Overfull \hbox (13.00414pt too wide) in paragraph at lines 597--598
+Underfull \vbox (badness 1675) has occurred while \output is active []
+
+ [32]
+File: ./images//test4.jpg Graphic file (type bmp)
+<./images//test4.jpg>
+
+Overfull \hbox (11.8749pt too wide) in paragraph at lines 625--626
  [][] 
  []
 
-[32]
+File: ./images//test5.jpg Graphic file (type bmp)
+<./images//test5.jpg>
+
+Overfull \hbox (13.00414pt too wide) in paragraph at lines 632--633
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+[34]
 Rozdzia\PlPrIeC {\l } 7.
-[33
+[35
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 637--638
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
 []\TU/times.ttf(0)/m/n/10.95 802.15 WPAN Task Group 6 Body Area Networks, IEEE,
  13 January 2022 URL:
  []
 
 
-Overfull \hbox (18.14568pt too wide) in paragraph at lines 644--645
+Overfull \hbox (18.14568pt too wide) in paragraph at lines 679--680
 \TU/times.ttf(0)/m/n/10.95 2018, URL: https://www.cabotsolutions.com/ble-vs-wi-
 fi-which-is-better-for-iot-product-development 
  []
 
 
-Overfull \hbox (119.55617pt too wide) in paragraph at lines 646--647
+Overfull \hbox (119.55617pt too wide) in paragraph at lines 681--682
 []\TU/times.ttf(0)/m/n/10.95 bluetooth.com, Understanding Bluetooth Range, URL:
  https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/ 
  []
 
-[34
+[36
 
 ] (main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [35
+ [37
 
 ] (main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [36
+ [38
 
 ] (main.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7823 strings out of 411271
- 167081 string characters out of 2828803
- 608097 words of memory out of 3000000
- 28107 multiletter control sequences out of 15000+600000
- 413497 words of font info for 83 fonts, out of 8000000 for 9000
+ 7913 strings out of 411271
+ 169070 string characters out of 2828803
+ 608133 words of memory out of 3000000
+ 28196 multiletter control sequences out of 15000+600000
+ 413505 words of font info for 84 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  73i,12n,81p,1197b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (38 pages).
+Output written on main.pdf (40 pages).
