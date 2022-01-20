@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  18 JAN 2022 23:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  20 JAN 2022 14:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -624,9 +624,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 [4
 
-]
+] [5]
 Rozdzia\PlPrIeC {\l } 1.
-[5
+[6
 
 
 ]
@@ -634,16 +634,16 @@ Rozdzia\PlPrIeC {\l } 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6
+ [7
 
 ]
-[7]
+[8]
 File: ./images//rodzaje_sieci.jpg Graphic file (type bmp)
 <./images//rodzaje_sieci.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [9]
 File: ./images//gwiazda_siatka.jpg Graphic file (type bmp)
 <./images//gwiazda_siatka.jpg>
 
@@ -654,7 +654,7 @@ Overfull \hbox (55.16019pt too wide) in paragraph at lines 263--264
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [10]
 File: ./images//mieszana.jpg Graphic file (type bmp)
 <./images//mieszana.jpg>
 
@@ -662,7 +662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--271
 
  []
 
-[10]
+[11]
 File: ./images//2,4GHz.jpg Graphic file (type bmp)
 <./images//2,4GHz.jpg>
 
@@ -680,8 +680,8 @@ Overfull \hbox (45.6472pt too wide) in paragraph at lines 294--295
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12] [13]
+ [12]
+[13] [14]
 File: ./images//bezpieczenstwo.png Graphic file (type bmp)
 <./images//bezpieczenstwo.png>
 
@@ -695,15 +695,15 @@ Overfull \hbox (6.13655pt too wide) in paragraph at lines 315--320
 wa użytkownikowi oczywiście trze-
  []
 
-[14]
+[15]
 Rozdzia\PlPrIeC {\l } 3.
 File: ./images//zalozenia.jpg Graphic file (type bmp)
 <./images//zalozenia.jpg>
-[15
+[16
 
 ]
 Rozdzia\PlPrIeC {\l } 4.
-[16
+[17
 
 ]
 File: ./images//rpi.jpg Graphic file (type bmp)
@@ -716,16 +716,16 @@ Overfull \hbox (30.38936pt too wide) in paragraph at lines 394--395
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [18]
 File: ./images//stos.jpg Graphic file (type bmp)
 <./images//stos.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [20]
 File: ./images//hc05.jpg Graphic file (type bmp)
 <./images//hc05.jpg>
 
@@ -733,7 +733,7 @@ Overfull \hbox (30.38936pt too wide) in paragraph at lines 450--451
  [][] 
  []
 
-[20] [21]
+[21] [22]
 Rozdzia\PlPrIeC {\l } 5.
 File: ./images//kod.jpg Graphic file (type bmp)
 <./images//kod.jpg>
@@ -742,7 +742,7 @@ File: ./images//szkielet.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22
+ [23
 
 ]
 File: ./images//db.jpg Graphic file (type bmp)
@@ -750,7 +750,7 @@ File: ./images//db.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [24]
 File: ./images//algorytm.jpg Graphic file (type bmp)
 <./images//algorytm.jpg>
 
@@ -762,18 +762,18 @@ ania łączności bezprzewodowej po-
 
 Underfull \vbox (badness 5787) has occurred while \output is active []
 
- [24]
+ [25]
 File: ./images//schemat.jpg Graphic file (type bmp)
 <./images//schemat.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-[26]
+ [26]
+[27]
 Rozdzia\PlPrIeC {\l } 6.
 File: ./images//mieszkanke.jpg Graphic file (type bmp)
 <./images//mieszkanke.jpg>
-[27
+[28
 
 ]
 File: ./images//bt.jpg Graphic file (type bmp)
@@ -783,7 +783,7 @@ File: ./images//2,4Ghz.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [29]
 File: ./images//dom1pietro.jpg Graphic file (type bmp)
 <./images//dom1pietro.jpg>
 File: ./images//dom2pietro.jpg Graphic file (type bmp)
@@ -791,99 +791,95 @@ File: ./images//dom2pietro.jpg Graphic file (type bmp)
 File: ./images//2,4Ghz_Dom.jpg Graphic file (type bmp)
 <./images//2,4Ghz_Dom.jpg>
 
-Overfull \hbox (48.80908pt too wide) in paragraph at lines 568--569
+Overfull \hbox (48.80908pt too wide) in paragraph at lines 573--574
  [][] 
  []
 
 
 Underfull \vbox (badness 1184) has occurred while \output is active []
 
- [29]
+ [30]
 File: ./images//bt_dom.jpg Graphic file (type bmp)
 <./images//bt_dom.jpg>
 
-Overfull \hbox (27.15878pt too wide) in paragraph at lines 573--574
+Overfull \hbox (27.15878pt too wide) in paragraph at lines 578--579
  [][] 
  []
 
 
-Overfull \hbox (22.30087pt too wide) in paragraph at lines 579--590
- [][] 
+Overfull \hbox (35.62509pt too wide) in paragraph at lines 586--597
+[][] 
  []
 
-[30]
+[31] [32] [33]
 File: ./images//test1.jpg Graphic file (type bmp)
 <./images//test1.jpg>
 
-Overfull \hbox (11.49849pt too wide) in paragraph at lines 604--605
+Overfull \hbox (11.49849pt too wide) in paragraph at lines 668--669
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
 File: ./images//test2.jpg Graphic file (type bmp)
 <./images//test2.jpg>
 File: ./images//test3.jpg Graphic file (type bmp)
 <./images//test3.jpg>
 
-Underfull \vbox (badness 1675) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
+ [34]
 File: ./images//test4.jpg Graphic file (type bmp)
 <./images//test4.jpg>
 
-Overfull \hbox (11.8749pt too wide) in paragraph at lines 625--626
- [][] 
- []
-
-File: ./images//test5.jpg Graphic file (type bmp)
-<./images//test5.jpg>
-
-Overfull \hbox (13.00414pt too wide) in paragraph at lines 632--633
+Overfull \hbox (11.8749pt too wide) in paragraph at lines 689--690
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-[34]
+ [35]
+File: ./images//test5.jpg Graphic file (type bmp)
+<./images//test5.jpg>
+
+Overfull \hbox (13.00414pt too wide) in paragraph at lines 696--697
+ [][] 
+ []
+
+[36]
 Rozdzia\PlPrIeC {\l } 7.
-[35
+[37
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 []\TU/times.ttf(0)/m/n/10.95 802.15 WPAN Task Group 6 Body Area Networks, IEEE,
  13 January 2022 URL:
  []
 
 
-Overfull \hbox (18.14568pt too wide) in paragraph at lines 679--680
+Overfull \hbox (18.14568pt too wide) in paragraph at lines 743--744
 \TU/times.ttf(0)/m/n/10.95 2018, URL: https://www.cabotsolutions.com/ble-vs-wi-
 fi-which-is-better-for-iot-product-development 
  []
 
 
-Overfull \hbox (119.55617pt too wide) in paragraph at lines 681--682
+Overfull \hbox (119.55617pt too wide) in paragraph at lines 745--746
 []\TU/times.ttf(0)/m/n/10.95 bluetooth.com, Understanding Bluetooth Range, URL:
  https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/ 
  []
 
-[36
+[38
 
 ] (main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [37
+ [39
 
 ] (main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [38
+ [40
 
 ] (main.aux)
 
@@ -893,10 +889,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7913 strings out of 411271
  169070 string characters out of 2828803
- 608133 words of memory out of 3000000
+ 612133 words of memory out of 3000000
  28196 multiletter control sequences out of 15000+600000
  413505 words of font info for 84 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 73i,12n,81p,1197b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,81p,1197b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (40 pages).
+Output written on main.pdf (42 pages).

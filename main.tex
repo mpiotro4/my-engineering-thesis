@@ -519,17 +519,22 @@ W ramach testów sprawdzono wpływ zakłócających sygnałów oraz przeszkód t
 \begin{itemize}
 \item Czas transmisji – różnica czasu pomiędzy ostatnią a pierwszą odebraną ramką \[ t = t_{koniec} + t_{poczatek} \; \; \;  (6.1.)\]
 \item	Sprawność transmisji – stosunek liczby wysłanych ramek do ilości do liczby poprawnie odebranych ramek \[ S = \frac{N_{odebranych}}{N_{wyslanych}} \; \; \;  (6.2.)\]
-\item	Moc odbieranego sygnału wyrażona w dBm zmierzona przy użyciu aplikacji na smartphone 
+\item	Średnia arytemtyczna mocy odbieranego sygnału wyrażona w dBm wyliczona z pięciu pomiarów
 \end{itemize}
 
-%----6.1.2-----
+%----6.1.1-----
 \subsection{Układ pomiarowy}
 Do pomiaru mocy odbieranego sygnału standardu Bluetooth użyto aplikacji „bluetooth scanner” dostępnej na telefonach z systemem operacyjnym android. Urządzeniem wykorzystanym do pomiarów był smartfon Samsung Galaxy A3 2016 wykorzystujący standard Bluetooth w wersji 4 oraz w klasie 2 klasie mocy wynoszącej 2.5mW.
 \par
 W celu wyznaczenia niepewności pomiaru wykorzystano metodę statystyczna obliczaną na podstawie wielokrotnych pomiarów. Odpowiada ona odchyleniu standardowemu średniej z dokonanych pomiarów i jest określona wzorem 6.3.
 \[ u(x) = \sqrt{ \frac{ \sum_{i=1}^{n} (x_i -x_{srednia}^2) } { n(n-1)  }}  \; \; \;  (6.3.)\]
 \par
-Każda średnia w późniejszych obliczeniach została wyliczona z pięciu pomiarów.	
+Gdzie: \par
+ x\textsubscript{i}  - wynik pomiaru nr i 
+\par
+ x\textsubscript{średnia}  - średnia arytemtyczna ze wszystkich pomiarów
+\par
+ n - liczba pomiarów
 
 %----6.1.2-----
 \subsection{Środowisko testowe}
@@ -551,7 +556,7 @@ W otoczeniu obecnych jest wiele sieci Wi-Fi oraz Bluetooth, które potencjalnie 
 \caption{Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr 1.}
 \end{figure}
 \par
-Drugą lokalizacją jest jednorodzinny dom na prowincji. Na rysunku XX został przedstawiony schemat środowiska testowego numer 2, budynek posiada dwie kondygnacje na których przeprowadzono pomiary – parter i pierwsze piętro. Czynnikami które uległy zmianie w porównaniu do środowiska numer 1 jest znacząco mniejsza ilość sygnałów Wi-Fi oraz Bluetooth. Na rysunku 6.5. widoczne są tylko dwie sieci z czego jedna z nich to prywatna sieć domowników, z kolei w tabeli 6.2. znajdują się tylko dwa sygnały pochodzące z bezprzewodowych urządzeń peryferyjnych.
+Drugą lokalizacją jest jednorodzinny dom na prowincji. Na rysunku 6.3. został przedstawiony schemat środowiska testowego numer 2, budynek posiada dwie kondygnacje na których przeprowadzono pomiary – parter i pierwsze piętro. Czynnikami które uległy zmianie w porównaniu do środowiska numer 1 jest znacząco mniejsza ilość sygnałów Wi-Fi oraz Bluetooth. Na rysunku 6.5. widoczne są tylko dwie sieci z czego jedna z nich to prywatna sieć domowników, z kolei w tabeli 6.2. znajdują się tylko dwa sygnały pochodzące z bezprzewodowych urządzeń peryferyjnych.
 \par
 \begin{figure}[H]
 \centering
@@ -573,28 +578,87 @@ Drugą lokalizacją jest jednorodzinny dom na prowincji. Na rysunku XX został p
 \includegraphics[scale=0.8]{bt_dom}
 \caption{Moce poszczególnych sygnałów Bluetooth w otoczeniu nadajnika w środowisku testowym nr 2.}
 \end{table}
-W pierwszej kolejności w ramach próby kontrolnej przeprowadzono pomiary dla łączności przewodowej, a następnie powtórzono ten sam proces dla każdego z wyszczególnionych na schemacie punktów. Wyniki zestawiono w poniższej tabeli:
+
+%----6.1.2-----
+\subsection{Pomiary}
+W pierwszej kolejności w ramach próby kontrolnej przeprowadzono pomiary dla łączności przewodowej, a następnie powtórzono ten sam proces dla każdego wyszczególnionego na schemacie punktów. Wyniki dla środowiska testowego numer 1 przedstawiono w tabelach 6.3. i 6.4.
 \begin{table}[H]
-\centering
 \begin{tabular}{|l|l|l|l|}
 \hline
-Miejsce                          & moc {[}dBm{]} & czas transmisji {[}s{]} & sprawność transmisji {[}\%{]} \\ \hline
-obok nadajnika (przewód)         & n. d.         & 50,805                  & 100                           \\ \hline
-obok nadajnika                   & -32           & 50,781                  & 100                           \\ \hline
-korytarz                         & -70           & 50,732                  & 100                           \\ \hline
-kuchnia                          & -63           & 50,512                  & 100                           \\ \hline
-drzwi wejściowe                  & -80           & 53,355                  & 100                           \\ \hline
-klatka schodowa, otwarte drzwi   & -84           & 58.839                  & 90,8                          \\ \hline
-klatka schodowa, zamknięte drzwi & ?             & -                       & 38,5                          \\ \hline
+Miejsce                          & moc {[}dBm{]} & niepewność   {[}dBm{]} & odległość   od nadajnika {[}m{]} \\ \hline
+obok nadajnika (przewód)         & n. d.         & n. d.                  & 0                                \\ \hline
+obok nadajnika                   & -31,6           & 1,326649916            & 0                                \\ \hline
+korytarz                         & -71,6           & 1,720465053            & 10                               \\ \hline
+kuchnia                          & -62,6           & 1,630950643            & 3                                \\ \hline
+drzwi wejściowe                  & -83,2           & 1,881488772            & 11,5                             \\ \hline
+klatka schodowa, otwarte drzwi   & -86,8           & 1,356465997            & 12                               \\ \hline
+klatka schodowa, zamknięte drzwi & ?             & ?                      & 12                               \\ \hline
 \end{tabular}
-\caption{Wyniki pomiarów przeprowadzonych w środowisku testowym nr. 1}
+\caption{Wyniki pomiarów mocy przeprowadzonych w środowisku testowym nr. 1}
+\end{table}
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+Miejsce                          & czas transmisji {[}s{]} & sprawność transmisji {[}\%{]} \\ \hline
+obok nadajnika (przewód)         & 50,805                  & 100                           \\ \hline
+obok nadajnika                   & 50,781                  & 100                           \\ \hline
+korytarz                         & 50,732                  & 100                           \\ \hline
+kuchnia                          & 50,512                  & 100                           \\ \hline
+drzwi wejściowe                  & 53,355                  & 100                           \\ \hline
+klatka schodowa, otwarte drzwi   & 58.839                  & 90,8                          \\ \hline
+klatka schodowa, zamknięte drzwi & -                       & 38,5                          \\ \hline
+\end{tabular}
+\caption{Wyniki pomiarów sprawności transmisji przeprowadzonych w środowisku testowym nr. 1}
 \end{table}
 \par
-Pierwszą rzeczą, która można wywnioskować z powyższych pomiarów jest minimalna moc sygnału która zapewnia bezbłędną transmisję. Wynosi ona -80 dBm i jest to wynik zgodny ze specyfikacją standardu Bluetooth według której minimalna moc mieści się w przedziale od -70 do -82 dBm.  Warto również zwrócić uwagę na to, że dla dostatecznie dobrego zasięgu czas transmisji pozostaje praktycznie taki sam jak w przypadku transmisji przewodowej. 
+Pierwszą rzeczą, która można wywnioskować z powyższych pomiarów jest minimalna moc sygnału która zapewnia bezbłędną transmisję. Wynosi ona około -83 dBm i jest to wynik zgodny ze specyfikacją standardu Bluetooth według której minimalna moc mieści się w przedziale od -70 do -82 dBm.  Warto również zwrócić uwagę na to, że dla dostatecznie dobrego zasięgu czas transmisji pozostaje praktycznie taki sam jak w przypadku transmisji przewodowej. 
 \par
-Kolejną kwestią jest wpływ przeszkód i odległości na propagacje sygnału. Wyraźnie widać, że odległość 10 metrów w przypadku korytarza oraz ściana w przypadku kuchni nie stanowią istotnej bariery. Dopiero przy drzwiach wejściowych, w odległości około 12 metrów od nadajnika obserwowalne stają się utrudnienia w transmisji w postaci wydłużonego czasu nadawania. Poza obszarem mieszkania, na klatce schodowej można zaobserwować obniżenie sprawności transmisji do około 90\%. Zamknięcie drzwi wejściowych powoduje prawie całkowity zanik sygnału do tego stopnia, że transmisja zostaje w pewnym momencie bezpowrotnie przerwana, a moc odbieranego sygnału nie daje się zmierzyć przy użyciu wybranej metody, można jedynie szacować, że wynosi ona poniżej -90 dBm.
+Kolejną kwestią jest wpływ przeszkód i odległości na propagacje sygnału. Wyraźnie widać, że odległość 10 metrów w przypadku korytarza oraz ściana w przypadku kuchni nie wpływają na odbiór sygnału, zarówno czas jak i sprawność transmisji pozostają bez zmian. Dopiero przy drzwiach wejściowych, w odległości około 12 metrów od nadajnika obserwowalne stają się utrudnienia w postaci wydłużonego czasu nadawania. Poza obszarem mieszkania, na klatce schodowej można zaobserwować obniżenie sprawności transmisji do około 90\%. Zamknięcie drzwi wejściowych powoduje prawie całkowity zanik sygnału do tego stopnia, że transmisja zostaje w pewnym momencie bezpowrotnie przerwana, a moc odbieranego sygnału nie daje się zmierzyć przy użyciu wybranej metody, można jedynie szacować, że wynosi ona poniżej -90 dBm.
 \par
-Na podstawie wyników powyższych pomiarów można stwierdzić, że zarówno liczne sygnały zakłócające jak i fizyczne przeszkody nie stanowią istotnej bariery dla sygnału standardu Bluetooth. Średni zasięg, dla którego można przyjąć, że komunikacja odbywa się w sposób niezawodny wynosi około 10 metrów.
+Całą powyższą procedurę powtórzono dla środowiska testowego numer 2. Wyniki przedstawiono w tabelach 6.5. i 6.6.
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+Miejsce                    & moc {[}dBm{]} & niepewność   {[}dBm{]} & odległość   od nadajnika {[}m{]} \\ \hline
+Obok   nadajnika (przewód) & n. d.         & n. d.                  & 0                                \\ \hline
+Obok nadajnika             & -30,8         & 0,8                    & 0                                \\ \hline
+Salon                      & -82           & 1,414213562            & 15                               \\ \hline
+kuchnia                    & -75,8         & 1,280624847            & 10                               \\ \hline
+Pokój na   piętrze         & -75,6         & 1,029563014            & 12                               \\ \hline
+Sypialnia na   piętrze     & -84,6         & 1,326649916            & 18                               \\ \hline
+\end{tabular}
+\caption{Wyniki pomiarów mocy przeprowadzonych w środowisku testowym nr. 2}
+\end{table}
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+Miejsce                    & czas transmisji {[}s{]} & sprawność transmisji {[}\%{]} \\ \hline
+Obok   nadajnika (przewód) & 50.805                  & 100                           \\ \hline
+Obok nadajnika             & 50.755                  & 100                           \\ \hline
+Salon                      & 50.707                  & 99,54                         \\ \hline
+kuchnia                    & 50.681                  & 100                           \\ \hline
+Pokój na   piętrze         & 50.787                  & 100                           \\ \hline
+Sypialnia na   piętrze     & 52.234                  & 99,09                         \\ \hline
+\end{tabular}
+\caption{Wyniki pomiarów sprawności transmisji przeprowadzonych w środowisku testowym nr. 2}
+\end{table}
+
+W tym przypadku w porównaniu do pierwszej serii pomiarów nie udało się znaleźć w domu punktu, dla którego transmisja zostałaby bezpowrotnie utracona. Nawet w skrajnym punkcie takim jak sypialnia na piętrze sprawność transmisji uległa zmniejszeniu o tylko mniej niż jeden procent a czas transmisji uległ wydłużeniu o mniej niż 2 sekundy. 
+\par
+Podobnie jak w przypadku środowiska testowego numer 1 można wywnioskować, że minimalna moc sygnału która zapewnia bezbłędną transmisje wynosi więcej niż -80 dBm, lecz tym razem skuteczny zasięg uległ zwiększeniu o około 20\%. 
+
+%----6.1.4-----
+\subsection{Wnioski}
+
+Na podstawie wyników powyższych pomiarów można stwierdzić, że fizyczne przeszkody w postaci ścian bądź sufitu nie stanowią bariery dla sygnału standardu Bluetooth. Wskazują na to między innymi pomiary wykonane w kuchni dla środowiska testowego numer 1 gdzie nie zaobserwowano w żadnych zmian w stosunku do próby kontrolnej.
+\par
+Z drugiej strony czynnikiem znacząco wpływającym na zasięg co za tym idzie jakość sygnału są zakłócenia w postaci niepożądanych sieci Wi-Fi oraz innych urządzeń korzystających z Bluetooth. Efekt ten jest widoczny w mieszkaniu, gdzie skuteczny zasięg wynosi około 10 metrów podczas gdy w domu jednorodzinnym prawie bezbłędną transmisje uzyskano na dystansie 15 metrów. 
+\par
+Podsumowując można przyjąć, że minimalna odległość, na której transmisja odbywa się w sposób niezawodny wynosi do 10 metrów z czego w dobrych warunkach, czyli przy braku zakłóceń dystans ten może ulec zwiększeniu o około 2 metry. Ponad to przeszkody w postaci pojedynczej ściany bądź sufitu nie mają znaczącego wpływu na propagacje sygnału.
+
 
 %----6.1.-----
 \section{Testy wersji demonstracyjnej stacji usługowej}
