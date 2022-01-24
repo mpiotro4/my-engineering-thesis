@@ -34,13 +34,13 @@
   \ln\mleft(#1\mright)%
 }
 
-\floatname{algorithm}{Algorytm}
+\floatname{algorithm}{Kod}
 
 \renewcommand{\algorithmicrequire}{\textbf{Na wejściu:}}
 \renewcommand{\algorithmicensure}{\textbf{Na wyjściu:}}
 \renewcommand{\algorithmicprocedure}{\textbf{funkcja}}
 
-\renewcommand{\listalgorithmname}{Spis algorytmów}
+\renewcommand{\listalgorithmname}{Listingi kodu}
 
 \renewcommand{\labelitemi}{$\bullet$}
 
@@ -117,7 +117,7 @@ BoldItalicFont=arialbi.ttf
             \hfill \break
             \hfill \break
             promotor\\
-            dr~hab. inż. Michał Borecki\\
+            dr~hab. inż. Michał Borecki, prof. uczelni\\
             \vfill
             WARSZAWA 2022
         }
@@ -146,8 +146,10 @@ BoldItalicFont=arialbi.ttf
 \centerline\textit\noindent{\bf Tytuł:}
 Konstrukcja dedykowanej stacji usługowej Internetu Rzeczy z zastosowaniem komputera jednopłytkowego.
    \hfill \break
-	\par Nniejsza praca ma na celu konstrukcje urządzenia służącego do integracji węzłów sieci Internetu Rzeczy. 
-	\par W ramach projektu skonfigurowano komputer  jednopłytkowy oraz stworzono dla niego dedykowane oprogramowanie. Do zakresu prac należało również zaprojektowanie węzła i jego konstrukcją oraz przeprowadzenie testów całego systemu.
+\par
+Niniejsza praca ma na celu konstrukcje urządzenia służącego do integracji w sposób bezprzewodowy węzłów sieci Internetu Rzeczy, które jest określane mianem stacji usługowej oraz przeprowadzenie jego weryfikacji eksperymentalnej w zmieniających się warunkach.  
+\par
+W ramach projektu skonfigurowano komputer jednopłytkowy, aby pełnił funkcje serwera, stworzono dedykowane oprogramowanie oraz dokonano projektu węzła wraz z jego konstrukcją. Następnie porównano wpływy zakłóceń innymi sygnałami oraz fizycznych przeszkód obecnych w bloku mieszkalnym i jednorodzinnym domu w celu ustalenia warunków niezawodnej komunikacji bezprzewodowej.
    \hfill \break
    \hfill \break
 \textbf{Słowa kluczowe:} Internet Rzeczy, komputer jednopłytkowy, łączność bezprzewodowa
@@ -160,8 +162,10 @@ Konstrukcja dedykowanej stacji usługowej Internetu Rzeczy z zastosowaniem kompu
 \centerline\textit\noindent{\bf Title:}
 Construction of a dedicated Internet of Things service station using a single board computer.
    \hfill \break
-	\par The present work is aimed at the construction of a device for the integration of the Internet of Things nodes. 
-	\par As part of the project, a single-board computer was configured and dedicated software was created for it. The scope of work also included designing the node and its construction, as well as testing the entire system.
+	\par 
+The aim of this work is to construct a device for wireless integration of the Internet of Things nodes, which is referred to as a service station, and to conduct its experimental verification under changing conditions.
+\par
+As part of the project, a single-board computer was configured to act as a server, dedicated software was created and the node was designed together with its construction. They then compared the interference effects of other signals and the physical obstacles present in the apartment block and the single-family house to establish conditions for reliable wireless communication.
    \hfill \break
    \hfill \break
 \textbf{Keywords:} Internet of Things, single board computer, wireless connectivity
@@ -457,12 +461,12 @@ Po wybraniu protokołu należy się jeszcze upewnić, że zarówno węzeł jak i
 %----5.1.-----
 \section{Aplikacja internetowa}
 
-Realizacje rozpoczęto od konfiguracji komputera jedno płytkowego poprzez zainstalowanie systemu operacyjnego Raspberry Pi OS oraz pozostałego oprogramowania i bibliotek wymienionych w stosie technologicznym stacji usługowej. Dodatkowo podłączono komputer do sieci LAN poprzez Wi-Fi, aby umożliwić wygodną pracę zdalną z komputera osobistego za pośrednictwem protokołu SSH. Kolejnym krokiem było stworzenie szkieletu samej aplikacji, co dzięki bibliotece Flask okazało się być niezwykle proste. Cała logika odpowiedzialna za obsługę żądań przychodzących z serwera aplikacji zawarta jest w jednym pliku i została przedstwiona na rysunku 5.1.
-\begin{figure}[H]
+Realizacje rozpoczęto od konfiguracji komputera jedno płytkowego poprzez zainstalowanie systemu operacyjnego Raspberry Pi OS oraz pozostałego oprogramowania i bibliotek wymienionych w stosie technologicznym stacji usługowej. Dodatkowo podłączono komputer do sieci LAN poprzez Wi-Fi, aby umożliwić wygodną pracę zdalną z komputera osobistego za pośrednictwem protokołu SSH. Kolejnym krokiem było stworzenie szkieletu samej aplikacji, co dzięki bibliotece Flask okazało się być niezwykle proste. Cała logika odpowiedzialna za obsługę żądań przychodzących z serwera aplikacji zawarta jest w jednym pliku i została przedstwiona we fragmencie kodu 5.1.
+\begin{algorithm}[H]
 \centering
 \includegraphics[scale=0.42]{kod}
-\caption{Fragment kodu odpowiedzialny za obsługę żądań przychodzących z serwera}
-\end{figure}
+\caption{Fragment odpowiedzialny za obsługę żądań przychodzących z serwera}
+\end{algorithm}
 Powyższy kod sprawia, że aplikacja po otrzymaniu żądania typu GET od serwera aplikacji zwróci kod strony zawarty w pliku „index.jinja” wraz z dynamicznie dodaną wiadomością „Witaj świecie!”. Sama treści strony została stworzona na podstawie darmowego szablonu HTML dostępnego w Internecie.  Aby przetestować, czy całość działa wystarczy wpisać w przeglądarkę adres IP stacji który został przydzielony przez router. Poniżej przedstawiono rezultat:
 \begin{figure}[H]
 \centering
@@ -476,26 +480,39 @@ Powyższy kod sprawia, że aplikacja po otrzymaniu żądania typu GET od serwera
 Kolejnym krokiem było zaimplementowanie funkcjonalności wymienionych w założeniach. Z racji, iż aplikacja przede wszystkim ma zbierać i przetwarzać informacje prace rozpoczęto od projektu bazy danych. 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{db}
+\includegraphics[scale=0.5]{db}
 \caption{Szkic bazy danych}
 \end{figure}
 \par
-Powyżej przedstawiono logiczny model bazy danych który posłużył później do implementacji. Wszystkie relacje należy rozumieć jako „jeden do wielu” gdzie linia zakończona rozwidleniem oznacza, że w danej tabeli występuje wielokrotnie rekord z innej tabeli będącej z nią w relacji. 
+Na rysunku 5.2. przedstawiono logiczny model bazy danych który posłużył później do implementacji. Wszystkie relacje należy rozumieć jako „jeden do wielu” gdzie linia zakończona rozwidleniem oznacza, że w danej tabeli występuje wielokrotnie rekord z innej tabeli będącej z nią w relacji. \par
+W zaproponowanym modelu tabela „Węzły” zawiera w sobie listę wszystkich rodzajów węzłów. Może być to dowolny czujnik temperatury, albo zdalnie sterowany przekaźnik. Przykładowo we fragmencie kodu 5.2. wstawiono do tej tabeli węzeł o nazwie „Węzeł testowy” z zadaną listą funkcji.  \par
+Tabela „Wyprodukowane węzły” reprezentuje fizyczne, wyprodukowane węzły sieci. Oznacza to, że każdy taki węzeł posiada unikalną kombinacje swojego własnego identyfikatora, identyfikatora rodzaju oraz adresu MAC. Dzięki temu użytkownik podając numer konkretnego węzła będzie mógł dodać go do sieci, z kolei aplikacja będzie wiedziała jak z nim „rozmawiać”. W tym momencie możliwe jest wyprodukowanie dowolnej ilości urządzeń, które stacja będzie postrzegać jako „Węzeł testowy” lecz każde z nich będzie miało swoją unikalną tożsamość.
+Proponowana architektura również ma na celu skalowalność, dzięki czemu dodanie nowego rodzaju węzła o nowych, dotychczas nieznanych funkcjach nie będzie stanowić problemu i wymaga jedynie utworzenia odpowiedniego rekordu w tabeli „Węzły”. Ponad to zapewnia ona prywatność, ponieważ każdy wyprodukowany węzeł musi zostać wcześniej otrzymać unikalny identyfikator od producenta, więc nie będzie możliwe korzystanie z urządzeń wyprodukowanych przez osoby trzecie, które mogłyby nie spełniać standardów bezpieczeństwa. Co więcej cały plik bazy danych jest przechowywany w pamięci komputera jednopłytkowego więc tylko użytkownik ma dostęp do gromadzonych danych.
+Kod 5.2. przedstawia fragment skryptu odpowiedzialnego za stworzenie całej bazy danych. W pierwszej kolejności nawiązywane jest połączenie z pustą bazą danych, po czym wykonywane są polecenia napisane zgodnie ze standardem SQL. Polecenie na poniższym listingu tworzy tabele o nazwie „nodes” odpowiadającej tabeli „węzły” z rysunku 5.2. i umieszcza w niej jeden testowy rekord o nazwie „Węzeł testowy”.
 \par
-W zaproponowanym modelu tabela „Węzły” stanowi abstrakcyjną reprezentacje węzła, który został wcześniej zaprojektowany przez konstruktora. Może być to na przykład czujnik temperatury, wilgotności albo zdalnie sterowany przekaźnik. Powyższa implementacja ma na celu zapewnić skalowalność, dzięki temu dodanie nowego rodzaju węzła nie będzie stanowić problemu. 
-\par
-Tabela „Wyprodukowane węzły” reprezentuje fizyczne, wyprodukowane węzły sieci. Oznacza to, że każdy taki węzeł posiada unikalną kombinacje swojego własnego identyfikatora, identyfikatora abstrakcyjnego modelu oraz adresu MAC. Dzięki temu użytkownik podając numer konkretnego węzła będzie mógł dodać go do sieci, z kolei aplikacja będzie wiedziała jak z nim „rozmawiać”. Ma to również na celu bezpieczeństwo, mianowicie każdy wyprodukowany węzeł musi zostać wcześniej otrzymać unikalny identyfikator od producenta więc nie będzie możliwe korzystanie z urządzeń wyprodukowanych przez osoby trzecie, które mogłyby nie spełniać standardów bezpieczeństwa.
+
+\begin{algorithm}[H]
+\centering
+\includegraphics[scale=0.7]{kod_migracja}
+\caption{Fragment skryptu odpowiedzialnego za tworzenie bazy danych}
+\end{algorithm}
 
 %----5.3.-----
 \section{Łączność bezprzewodowa}
 Ostatnim elementem oprogramowania stacji usługowej było zapewnienie łączności bezprzewodowej z węzłami przy użyciu Bluetooth. Schemat blokowy algorytmu służącego do nawiązania takiej łączności przedstawiono poniżej:
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{algorytm}
+\includegraphics[scale=0.5]{algorytm}
 \caption{Schemat blokowy algorytmu do nawiązywania łączności bezprzewodowej poprzez\,Bluetooth}
 \end{figure}
 \par
-Na wstępnie musimy znać adres MAC modułu Bluetooth z którym chcemy się porozumieć. Kolejnym krokiem jest skanujemy otoczenie aż do skutku po czym należy wykonać procedurę parowania i zaufać urządzeniu. Po wykonaniu tych czynności pozostaje otworzyć port szeregowy i można wysyłać bądź odbierać informacje od modułu Bluetooth. Wszystkie powyższe operacje są implementowane przez system operacyjny i dostępne za pośrednictwem komend terminala systemu Linux więc autor pracy stworzył skrypt w języku Python który cały ten proces automatyzuje.
+Na wstępnie musimy znać adres MAC modułu Bluetooth z którym chcemy się porozumieć. Kolejnym krokiem jest skanujemy otoczenie aż do skutku po czym należy wykonać procedurę parowania i zaufać urządzeniu. Po wykonaniu tych czynności pozostaje otworzyć port szeregowy i można wysyłać bądź odbierać informacje od modułu Bluetooth. Wszystkie powyższe operacje są implementowane przez system operacyjny i dostępne za pośrednictwem komend terminala systemu Linux więc autor pracy stworzył skrypt w języku Python który cały ten proces automatyzuje. Przykładowy fragment kodu 5.3. przedstawia funkcję odpowiedzialną za wysłanie do wiersza poleceń komputera polecenia „scan on”, które uruchamia procedurę skanowania w poszukiwaniu wykrywalnych urządzeń Bluetooth.
+
+\begin{algorithm}[H]
+\centering
+\includegraphics[scale=0.7]{kod_bt}
+\caption{Fragment skryptu automatyzującego nawiązywanie łączności bezprzewodowej}
+\end{algorithm}
 
 %----5.4.-----
 \section{Węzeł}
@@ -503,11 +520,17 @@ Ostatnim elementem projektu był węzeł sieci z którym stacja będzie się kom
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{schemat}
+\includegraphics[scale=0.8]{schemat}
 \caption{Schemat połączeń elektrycznych węzła sieci}
 \end{figure}
 \par
-Moduł HC-05 komunikuje się poprzez interfejs szeregowy UART, więc wystarczy podłączyć jedynie wyprowadzenia służące do odbierania i wysyłania danych oraz masę i zasilanie. Mikrokontroler został zaprogramowany, aby wysyłać losowo generowaną liczbę co ma na celu symulować dokonywanie pomiaru za pośrednictwem zewnętrznego czujnika. Dodatkowo mikrokontroler w przypadku otrzymania odpowiedniej komendy zmieni stan jednego z wyjść cyfrowych które podłączone jest do wbudowanej w płytkę diody LED. Docelowo zamiast diody do takiego wyjścia można podłączyć na przykład przekaźnik, który steruje urządzeniem zasilanym wysokim napięciem.
+Moduł HC-05 komunikuje się poprzez interfejs szeregowy UART, więc wystarczy podłączyć jedynie wyprowadzenia służące do odbierania i wysyłania danych oraz masę i zasilanie. Mikrokontroler został zaprogramowany, aby wysyłać losowo generowaną liczbę co ma na celu symulować dokonywanie pomiaru za pośrednictwem zewnętrznego czujnika. Dodatkowo mikrokontroler w przypadku otrzymania odpowiedniej komendy zmieni stan jednego z wyjść cyfrowych które podłączone jest do wbudowanej w płytkę diody LED. Fragment kodu 5.4. przedstawia główną pętle programu mikrokontrolera. Docelowo zamiast diody do takiego wyjścia można podłączyć na przykład przekaźnik, który steruje urządzeniem zasilanym wysokim napięciem.
+
+\begin{algorithm}[H]
+\centering
+\includegraphics[scale=0.7]{kod_node}
+\caption{Główna pętla programu mikrokontrolera}
+\end{algorithm}
 
 %----6.-----
 \chapter{Testowanie}
@@ -517,16 +540,16 @@ Moduł HC-05 komunikuje się poprzez interfejs szeregowy UART, więc wystarczy p
 W ramach testów sprawdzono wpływ zakłócających sygnałów oraz przeszkód terenowych obecnych w mieszkaniu na niezawodność łączności bezprzewodowej przy użyciu standardu Bluetooth. W tym celu nadano 10000 ramek danych z w odstępach czasowych wynoszącym 1 ms i zbadano następujące parametry:
 
 \begin{itemize}
-\item Czas transmisji – różnica czasu pomiędzy ostatnią a pierwszą odebraną ramką \[ t = t_{koniec} + t_{poczatek} \; \; \;  (6.1.)\]
-\item	Sprawność transmisji – stosunek liczby wysłanych ramek do ilości do liczby poprawnie odebranych ramek \[ S = \frac{N_{odebranych}}{N_{wyslanych}} \; \; \;  (6.2.)\]
+\item Czas transmisji – różnica czasu pomiędzy ostatnią a pierwszą odebraną ramką \[ t = t_{koniec} - t_{start} \; \; \;  (6.1.)\]
+\item	Sprawność transmisji – stosunek liczby poprawnie odebranych do ilości wszystkich wysłanych ramek\[ S = \frac{N_{odebranych}}{N_{wyslanych}} \; \; \;  (6.2.)\]
 \item	Średnia arytemtyczna mocy odbieranego sygnału wyrażona w dBm wyliczona z pięciu pomiarów
 \end{itemize}
 
 %----6.1.1-----
 \subsection{Układ pomiarowy}
-Do pomiaru mocy odbieranego sygnału standardu Bluetooth użyto aplikacji „bluetooth scanner” dostępnej na telefonach z systemem operacyjnym android. Urządzeniem wykorzystanym do pomiarów był smartfon Samsung Galaxy A3 2016 wykorzystujący standard Bluetooth w wersji 4 oraz w klasie 2 klasie mocy wynoszącej 2.5mW.
+Do pomiaru mocy odbieranego sygnału standardu Bluetooth użyto aplikacji „bluetooth scanner” dostępnej na telefonach z systemem operacyjnym android. Urządzeniem wykorzystanym do pomiarów był smartfon Samsung Galaxy A3 2016 wykorzystujący standard Bluetooth 4.0 w drugiej klasie mocy wynoszącej 2.5mW.
 \par
-W celu wyznaczenia niepewności pomiaru wykorzystano metodę statystyczna obliczaną na podstawie wielokrotnych pomiarów. Odpowiada ona odchyleniu standardowemu średniej z dokonanych pomiarów i jest określona wzorem 6.3.
+W celu wyznaczenia niepewności pomiaru wykorzystano metodę statystyczną, polegającą na dokonaniu obliczeń na podstawie wielokrotnych pomiarów. Obliczona w ten sposób niepewność odpowiada odchyleniu standardowemu średniej z dokonanych pomiarów i jest określona wzorem  6.3.
 \[ u(x) = \sqrt{ \frac{ \sum_{i=1}^{n} (x_i -x_{srednia}^2) } { n(n-1)  }}  \; \; \;  (6.3.)\]
 \par
 Gdzie: \par
@@ -535,16 +558,27 @@ Gdzie: \par
  x\textsubscript{średnia}  - średnia arytemtyczna ze wszystkich pomiarów
 \par
  n - liczba pomiarów
+\par
+
+Za nadajnik sygnału posłużył węzeł sieci wykonany w ramach niniejszego projektu. Jest on wyposażony w moduł Bluetooth HC-05 działający w standardzie Bluetooth 2.0 i w drugiej klasie mocy 2,5mW [22]. \par
+Odbiornikiem była stacja również uprzednio skonstruowana stacja usługowa Internetu Rzeczy z zastosowaniem komputera jednopłytkowego Raspberry Pi model 4 b. Podobnie jak nadajnik pracuje ona w klasie mocy 2,5mW lecz posiada standard Bluetooth w wersji 5.0 [23] \par
+Wszystkie pomiary zostały przeprowadzone gdy smartfon był trzymany pionowo, tyłem do nadajnika, na wysokości około 50cm. Podczas mierzenia sprawności transmisji nadajnik pozostawał nieruchomy, a odbiornik zmieniał swoje położenie. Oba urządzenia znajdowały się na tej samej wysokości 50 cm nad ziemią. Cały układ pomiarowy został przedstawiony na rysunku 6.1.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{uklad}
+\caption{Schemat układu pomiarowego}
+\end{figure}
 
 %----6.1.2-----
 \subsection{Środowisko testowe}
-Testy przeprowadzono w dwóch różnych lokalizacjach. Pierwszą z nich jest mieszkanie w jednym z bloków mieszkalnych w Warszawie, schemat środowiska testowego przedstawiono na rysunku 6.1.
+Testy przeprowadzono w dwóch różnych lokalizacjach. Pierwszą z nich jest mieszkanie w jednym z bloków mieszkalnych w Warszawie, schemat środowiska testowego przedstawiono na rysunku 6.2.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{mieszkanke}
 \caption{Schemat środowiska testowego nr 1.}
 \end{figure}
-W otoczeniu obecnych jest wiele sieci Wi-Fi oraz Bluetooth, które potencjalnie utrudniają transmisje. W tabeli 6.1 i na rysunku 6.2 przedstawiono wyniki pomiarów mocy poszczególnych sygnałów w paśmie 2,4GHz przeprowadzonych w najbliższym otoczeniu nadajnika, zdecydowana większość z nich pochodzi od sąsiadów.
+W otoczeniu obecnych jest wiele sieci Wi-Fi oraz Bluetooth, które potencjalnie utrudniają transmisje. W tabeli 6.1. i na rysunku 6.3. przedstawiono wyniki pomiarów mocy poszczególnych sygnałów w paśmie 2,4GHz przeprowadzonych w najbliższym otoczeniu nadajnika, zdecydowana większość z nich pochodzi od sąsiadów.
 \begin{table}[H]
 \centering
 \includegraphics[scale=0.4]{bt}
@@ -556,7 +590,7 @@ W otoczeniu obecnych jest wiele sieci Wi-Fi oraz Bluetooth, które potencjalnie 
 \caption{Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr 1.}
 \end{figure}
 \par
-Drugą lokalizacją jest jednorodzinny dom na prowincji. Na rysunku 6.3. został przedstawiony schemat środowiska testowego numer 2, budynek posiada dwie kondygnacje na których przeprowadzono pomiary – parter i pierwsze piętro. Czynnikami które uległy zmianie w porównaniu do środowiska numer 1 jest znacząco mniejsza ilość sygnałów Wi-Fi oraz Bluetooth. Na rysunku 6.5. widoczne są tylko dwie sieci z czego jedna z nich to prywatna sieć domowników, z kolei w tabeli 6.2. znajdują się tylko dwa sygnały pochodzące z bezprzewodowych urządzeń peryferyjnych.
+Drugą lokalizacją jest jednorodzinny dom na prowincji. Na rysunku 6.4. został przedstawiony schemat środowiska testowego numer 2, budynek posiada dwie kondygnacje na których przeprowadzono pomiary – parter i pierwsze piętro. Czynnikami które uległy zmianie w porównaniu do środowiska numer 1 jest znacząco mniejsza ilość sygnałów Wi-Fi oraz Bluetooth. Na rysunku 6.6. widoczne są tylko dwie sieci z czego jedna z nich to prywatna sieć domowników, z kolei w tabeli 6.2. znajdują się tylko dwa sygnały pochodzące z bezprzewodowych urządzeń peryferyjnych.
 \par
 \begin{figure}[H]
 \centering
@@ -653,7 +687,7 @@ Podobnie jak w przypadku środowiska testowego numer 1 można wywnioskować, że
 %----6.1.4-----
 \subsection{Wnioski}
 
-Na podstawie wyników powyższych pomiarów można stwierdzić, że fizyczne przeszkody w postaci ścian bądź sufitu nie stanowią bariery dla sygnału standardu Bluetooth. Wskazują na to między innymi pomiary wykonane w kuchni dla środowiska testowego numer 1 gdzie nie zaobserwowano w żadnych zmian w stosunku do próby kontrolnej.
+Na podstawie wyników powyższych pomiarów można stwierdzić, że fizyczne przeszkody w postaci pojedynczych ścian bądź sufitu nie stanowią bariery dla sygnału standardu Bluetooth. Wskazują na to między innymi pomiary wykonane w kuchni dla środowiska testowego numer 1 gdzie nie zaobserwowano w żadnych zmian w stosunku do próby kontrolnej.
 \par
 Z drugiej strony czynnikiem znacząco wpływającym na zasięg co za tym idzie jakość sygnału są zakłócenia w postaci niepożądanych sieci Wi-Fi oraz innych urządzeń korzystających z Bluetooth. Efekt ten jest widoczny w mieszkaniu, gdzie skuteczny zasięg wynosi około 10 metrów podczas gdy w domu jednorodzinnym prawie bezbłędną transmisje uzyskano na dystansie 15 metrów. 
 \par
@@ -701,35 +735,31 @@ Na rysunku 6.7 przedstawiono widok po wciśnięciu przycisku podgląd. Znajdują
 
 %---7----
 \chapter{Podsumowanie}
-W ramach projektu niniejszej udało się osiągnąć cel projektu i spełnić wszystkie jego założenia. Realizacja projektu obejmowała następujące zagadnienia:
-\begin{itemize}
-\item	Konstrukcja dedykowanej stacji usługowej Internetu Rzeczy
-\begin{itemize}
-\item	Konfiguracja komputera jednopłytkowego
-\item	Konfiguracja i uruchomienie serwera WWW
-\item	Napisanie oprogramowania
-\end{itemize}
-\item	Konstrukcja węzła sieci
-\begin{itemize}
-\item	Zaprojektowanie i wykonanie prototypu urządzenia
-\item	Napisanie oprogramowania
-\end{itemize}
-\item	Przeprowadzenie testów
-\end{itemize}
 
+W ramach projektu niniejszej pracy udało się osiągnąć cel projektu i spełnić wszystkie jego założenia. Realizacja projektu obejmowała następujące zagadnienia:
+\begin{itemize}
+\item	Konstrukcja dedykowanej stacji usługowej Internetu Rzeczy – skonfigurowano komputer jednopłytkowy poprzez zainstalowanie odpowiedniego oprogramowania tak aby przystosować urządzenie do pełnienia funkcji serwera www. Stworzono dedykowane oprogramowanie w tym:
+\begin{itemize}
+\item	 Skrypt w języku Python odpowiedzialny za procedurę nawiązywania łączności bezprzewodowej z wykorzystaniem standardu Bluetooth.
+\item	Aplikacja Internetowa języka Python wraz z biblioteką Flask służąca do obsługi żądań protokołu HTTP pochodzących z przeglądarki.
+\item	Warstwa wizualna aplikacji internetowej wyświetlana w przeglądarce opracowana przy pomocy takich technologii jak HTML i CSS oraz JavaScript.  
+\item	Relacyjna baza danych oparta na standardzie SQL.
+\end{itemize}
+\item	Przeprowadzenie weryfikacji eksperymentalnej – wykazano negatywny wpływ zakłóceń takich jak obce sygnały w paśmie 2,4GHz na niezawodność komunikacji przy użyciu standardu Bluetooth. Zmierzono największą odległość, która gwarantuje bezbłędną transmisję w środowisku testowym którym był blok mieszkalny i wynosi ona 10 metrów. Pomiary powtórzono dla domu jednorodzinnego, czyli środowisku o znacząco mniejszej liczbie zbędnych sygnałów co poskutkowało zwiększeniem maksymalnego zasięgu o 20\%.
+Ponad to dokonano testów manualnych wersji demonstracyjnej stacji usługowej. Udało się w pomyślnie ustanowić połączenie węzła ze stacją przy użyciu graficznego interfejsu użytkownika w postaci aplikacji Internetu. Urządzenie działa i posiada wszystkie założone funkcjonalności.
+\end{itemize}
 
 %----KONIEC------------------------
 
 \begin{thebibliography}{99}
 \bibitem[1]{} Dave Evans, "The Internet of Things: How the Next Evolution of the Internet Is Changing Everything", CISCO White Paper, kwiecień 2011, s. 3.
-\bibitem[2]{} Smart Energy Efficient Home Automation System Using IoT, IEEE, 2019
-\bibitem[3]{} CRAIoT: Concept, Review and Application(s) of IoT, IEEE, 2019
-\bibitem[4]{} NARROWBAND IOT FOR HEALTHCARE, IEEE, 2017
-\bibitem[5]{} Basic Food Safety Monitoring And Enhancement in Coffee Industry Using IOT, IEEE, 2021
-\bibitem[6]{} A Review of Low-End, Middle-End, and High-End Iot Devices, December 18, IEEE, 2018.
-\bibitem[7]{} Defending My Castle: A Co-Design Study of Privacy Mechanisms for Smart Homes, IEEE, May 4–9, 2019
-\bibitem[8]{} Hittu G., Mayank D., Securing IoT Devices and Securely Connecting the
-Dots Using REST API and Middleware, IEEE, 2019
+\bibitem[2]{} Smart Energy Efficient Home Automation System Using IoT, IEEE, 29 July 2019, DOI: 10.1109/IoT-SIU.2019.8777607
+\bibitem[3]{} CRAIoT: Concept, Review and Application(s) of IoT, IEEE, 29 July 2019, DOI: 10.1109/IoT-SIU.2019.8777467
+\bibitem[4]{} Sudhir K. Routray, Sharath Anand, NARROWBAND IOT FOR HEALTHCARE, IEEE, 19 October 2017, DOI: 10.1109/ICICES.2017.8070747
+\bibitem[5]{} S. Rajendran, T. Hari Prasath, S. Revathi, K. Rajesh, Basic Food Safety Monitoring And Enhancement in Coffee Industry Using IOT, IEEE, 20 April 2021, DOI: 10.1109/ICACITE51222.2021.9404609
+\bibitem[6]{} Mike O. Ojo, Stefano Giordano, Gregorio Procissi, Ilias N. Seitanidis, A Review of Low-End, Middle-End, and High-End Iot Devices, December 18, IEEE, 09 November 2018, DOI: 10.1109/ACCESS.2018.2879615
+\bibitem[7]{} Yaxing Yao, Justin Reed Basdeo, Smirity Kaushik, YangWang, Defending My Castle: A Co-Design Study of Privacy Mechanisms for Smart Homes, IEEE, May 4–9, 2019, DOI: 10.1145/3290605.3300428
+\bibitem[8]{} Hittu G., Mayank D., Securing IoT Devices and Securely Connecting the Dots Using REST API and Middleware, IEEE, 18-19 April 2019, DOI: 10.1109/IoT-SIU.2019.8777334
 \bibitem[9]{} URL: https://www.statista.com/statistics/976313/global-iot-market-size/
 \bibitem[10]{} bluetooth.org, Bluetooth Core Specification v.5.2, s.196, 2019-12-31
 \bibitem[11]{} Rozporządzenie Ministra Administracji i Cyfryzacji z dnia 12 grudnia 2014 r. w sprawie urządzeń radiowych nadawczych lub nadawczo-odbiorczych, które mogą być używane bez pozwolenia radiowego. URL: http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20170000096
@@ -739,18 +769,19 @@ Dots Using REST API and Middleware, IEEE, 2019
 \bibitem[15]{} Gary A. Donahue, Network Warrior, O'Reilly. s. 5, June 2007
 \bibitem[16]{} Groth, David and Skandler, Toby, Network+ Study Guide, Fourth Edition, s. 121 June 2007
 \bibitem[17]{} Dyrektywa Parlamentu Europejskiego i Rady 2014/53/UE z dnia 16 kwietnia 2014 r. w sprawie harmonizacji ustawodawstw państw członkowskich dotyczących udostępniania na rynku urządzeń radiowych i uchylająca dyrektywę
-\bibitem[18]{} Netia SA, Wi-Fi 5 GHz czy 2.4 GHz – co wybrać? Jak włączyć daną częstotliwość Wi-Fi?, 12 maja 2021, URL: https://www.netia.pl/pl/blog/wi-fi-5-ghz-czy-2-4-ghz-co-wybrac
+\bibitem[18]{} Nyein Aye Maung Maung , Win Zaw, Comparative Study of RSS-based Indoor Positioning Techniques on Two Different Wi-Fi Frequency Bands, IEEE, 24-27 June 2020, DOI: 10.1109/ECTI-CON49241.2020.9158211
 \bibitem[19]{} Dilip Geevarghese, BLE vs Wi-Fi: Which is Better for IoT Product Development?, February 01, 2018, URL:  https://www.cabotsolutions.com/ble-vs-wi-fi-which-is-better-for-iot-product-development
 \bibitem[20]{} Bradley Mitchell, How Fast Is a Wi-Fi Network?, June 16 2021
-\bibitem[21]{} bluetooth.com, Understanding Bluetooth Range, URL: https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/
-
+\bibitem[21]{} bluetooth.com, Understanding Bluetooth Range, \par URL: https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/
+\bibitem[22]{} HC-05 Bluetooth Module User’s Manual V1.0 URL: https://www.gme.cz/data/attachments/dsh.772-148.1.pdf
+\bibitem[23]{} raspberrypi.org, Raspberry Pi 4 Computer Model B – product brief
 \end{thebibliography}
 
 \listoffigures
 
 \listoftables
 
-
+\listofalgorithms
 %----Bibliografia------------------
 
 \end{document}
