@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  24 JAN 2022 17:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6) (preloaded format=xelatex 2021.9.13)  28 JAN 2022 23:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -584,17 +584,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--149
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+Underfull \hbox (badness 10000) in paragraph at lines 152--156
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--169
+Underfull \hbox (badness 10000) in paragraph at lines 168--173
 
  []
 
@@ -623,14 +623,14 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
 
 (C:\Users\mpiot\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+)
+[4
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-
-[4
-
-] [5]
+ [5]
 Rozdzia\PlPrIeC {\l } 1.
 [6
 
@@ -653,7 +653,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images//gwiazda_siatka.jpg Graphic file (type bmp)
 <./images//gwiazda_siatka.jpg>
 
-Overfull \hbox (55.16019pt too wide) in paragraph at lines 263--264
+Overfull \hbox (55.16019pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
@@ -664,7 +664,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images//mieszana.jpg Graphic file (type bmp)
 <./images//mieszana.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--271
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
 
  []
 
@@ -672,14 +672,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--271
 File: ./images//2,4GHz.jpg Graphic file (type bmp)
 <./images//2,4GHz.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--291
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
 
  []
 
 File: ./images//5GHz.jpg Graphic file (type bmp)
 <./images//5GHz.jpg>
 
-Overfull \hbox (45.6472pt too wide) in paragraph at lines 294--295
+Overfull \hbox (45.6472pt too wide) in paragraph at lines 299--300
  [][] 
  []
 
@@ -691,12 +691,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images//bezpieczenstwo.png Graphic file (type bmp)
 <./images//bezpieczenstwo.png>
 
-Overfull \hbox (73.67921pt too wide) in paragraph at lines 318--319
+Overfull \hbox (73.67921pt too wide) in paragraph at lines 323--324
  [][] 
  []
 
 
-Overfull \hbox (6.13655pt too wide) in paragraph at lines 315--320
+Overfull \hbox (6.13655pt too wide) in paragraph at lines 320--325
 []\TU/times.ttf(0)/m/n/12 Poza zapewnieniem subiektywnego odczucia bezpieczeńst
 wa użytkownikowi oczywiście trze-
  []
@@ -715,7 +715,7 @@ Rozdzia\PlPrIeC {\l } 4.
 File: ./images//rpi.jpg Graphic file (type bmp)
 <./images//rpi.jpg>
 
-Overfull \hbox (30.38936pt too wide) in paragraph at lines 394--395
+Overfull \hbox (30.38936pt too wide) in paragraph at lines 399--400
  [][] 
  []
 
@@ -735,7 +735,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images//hc05.jpg Graphic file (type bmp)
 <./images//hc05.jpg>
 
-Overfull \hbox (30.38936pt too wide) in paragraph at lines 450--451
+Overfull \hbox (30.38936pt too wide) in paragraph at lines 455--456
  [][] 
  []
 
@@ -743,41 +743,73 @@ Overfull \hbox (30.38936pt too wide) in paragraph at lines 450--451
 Rozdzia\PlPrIeC {\l } 5.
 File: ./images//kod.jpg Graphic file (type bmp)
 <./images//kod.jpg>
-File: ./images//szkielet.jpg Graphic file (type bmp)
-<./images//szkielet.jpg>
+File: ./images//kod_html.jpg Graphic file (type bmp)
+<./images//kod_html.jpg>
+
+Overfull \hbox (2.68863pt too wide) in paragraph at lines 474--476
+ [][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23
 
 ]
-File: ./images//db.jpg Graphic file (type bmp)
-<./images//db.jpg>
+File: ./images//szkielet.jpg Graphic file (type bmp)
+<./images//szkielet.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
+File: ./images//db.jpg Graphic file (type bmp)
+<./images//db.jpg>
+
+Overfull \hbox (35.96484pt too wide) in paragraph at lines 491--492
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \vbox (badness 2970) has occurred while \output is active []
+
+ [26]
+File: ./images//kod_migracja.jpg Graphic file (type bmp)
+<./images//kod_migracja.jpg>
 File: ./images//algorytm.jpg Graphic file (type bmp)
 <./images//algorytm.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--495
+Underfull \hbox (badness 10000) in paragraph at lines 514--514
  []\TU/times.ttf(0)/m/n/10.95 Rysunek 5.3.Schemat blokowy algorytmu do nawiązyw
 ania łączności bezprzewodowej po- 
  []
 
 
-Underfull \vbox (badness 5787) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-File: ./images//schemat.jpg Graphic file (type bmp)
-<./images//schemat.jpg>
+ [27]
+File: ./images//kod_bt.jpg Graphic file (type bmp)
+<./images//kod_bt.jpg>
+
+Overfull \hbox (33.25258pt too wide) in paragraph at lines 521--523
+ [][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-[27]
+ [28]
+File: ./images//schemat.jpg Graphic file (type bmp)
+<./images//schemat.jpg>
+
+[29]
+File: ./images//kod_node.jpg Graphic file (type bmp)
+<./images//kod_node.jpg>
+ [30]
 Rozdzia\PlPrIeC {\l } 6.
-[28
+[31
 
 ]
 File: ./images//uklad.jpg Graphic file (type bmp)
@@ -787,7 +819,7 @@ File: ./images//mieszkanke.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [32]
 File: ./images//bt.jpg Graphic file (type bmp)
 <./images//bt.jpg>
 File: ./images//2,4Ghz.jpg Graphic file (type bmp)
@@ -795,7 +827,7 @@ File: ./images//2,4Ghz.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [33]
 File: ./images//dom1pietro.jpg Graphic file (type bmp)
 <./images//dom1pietro.jpg>
 File: ./images//dom2pietro.jpg Graphic file (type bmp)
@@ -803,31 +835,31 @@ File: ./images//dom2pietro.jpg Graphic file (type bmp)
 File: ./images//2,4Ghz_Dom.jpg Graphic file (type bmp)
 <./images//2,4Ghz_Dom.jpg>
 
-Overfull \hbox (48.80908pt too wide) in paragraph at lines 584--585
+Overfull \hbox (48.80908pt too wide) in paragraph at lines 615--616
  [][] 
  []
 
 
 Underfull \vbox (badness 1184) has occurred while \output is active []
 
- [31]
+ [34]
 File: ./images//bt_dom.jpg Graphic file (type bmp)
 <./images//bt_dom.jpg>
 
-Overfull \hbox (27.15878pt too wide) in paragraph at lines 589--590
+Overfull \hbox (27.15878pt too wide) in paragraph at lines 620--621
  [][] 
  []
 
 
-Overfull \hbox (35.62509pt too wide) in paragraph at lines 597--608
+Overfull \hbox (35.62509pt too wide) in paragraph at lines 628--639
 [][] 
  []
 
-[32] [33] [34]
+[35] [36] [37]
 File: ./images//test1.jpg Graphic file (type bmp)
 <./images//test1.jpg>
 
-Overfull \hbox (11.49849pt too wide) in paragraph at lines 679--680
+Overfull \hbox (11.49849pt too wide) in paragraph at lines 710--711
  [][] 
  []
 
@@ -838,91 +870,91 @@ File: ./images//test3.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [38]
 File: ./images//test4.jpg Graphic file (type bmp)
 <./images//test4.jpg>
 
-Overfull \hbox (11.8749pt too wide) in paragraph at lines 700--701
+Overfull \hbox (11.8749pt too wide) in paragraph at lines 731--732
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [39]
 File: ./images//test5.jpg Graphic file (type bmp)
 <./images//test5.jpg>
 
-Overfull \hbox (13.00414pt too wide) in paragraph at lines 707--708
+Overfull \hbox (13.00414pt too wide) in paragraph at lines 738--739
  [][] 
  []
 
-[37]
+[40]
 Rozdzia\PlPrIeC {\l } 7.
-[38
+[41
 
 ]
-Underfull \hbox (badness 1755) in paragraph at lines 736--737
+Underfull \hbox (badness 1755) in paragraph at lines 764--765
 []\TU/times.ttf(0)/m/n/10.95 Smart Energy Efficient Home Automation System Usin
 g IoT, IEEE, 29 July 2019, DOI:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
 []\TU/times.ttf(0)/m/n/10.95 CRAIoT: Concept, Review and Application(s) of IoT,
  IEEE, 29 July 2019, DOI:
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 739--740
+Underfull \hbox (badness 1281) in paragraph at lines 767--768
 []\TU/times.ttf(0)/m/n/10.95 S. Rajendran, T. Hari Prasath, S. Revathi, K. Raje
 sh, Basic Food Safety Monitoring And
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 739--740
+Underfull \hbox (badness 1769) in paragraph at lines 767--768
 \TU/times.ttf(0)/m/n/10.95 Enhancement in Coffee Industry Using IOT, IEEE, 20 A
 pril 2021, DOI: 10.1109/ICACI-
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 740--741
+Underfull \hbox (badness 2644) in paragraph at lines 768--769
 \TU/times.ttf(0)/m/n/10.95 Middle-End, and High-End Iot Devices, December 18, I
 EEE, 09 November 2018, DOI:
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 741--742
+Underfull \hbox (badness 2261) in paragraph at lines 769--770
 []\TU/times.ttf(0)/m/n/10.95 Yaxing Yao, Justin Reed Basdeo, Smirity Kaushik, Y
 angWang, Defending My Castle: A
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 741--742
+Underfull \hbox (badness 1436) in paragraph at lines 769--770
 \TU/times.ttf(0)/m/n/10.95 Co-Design Study of Privacy Mechanisms for Smart Home
 s, IEEE, May 4–9, 2019, DOI:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
 []\TU/times.ttf(0)/m/n/10.95 802.15 WPAN Task Group 6 Body Area Networks, IEEE,
  13 January 2022 URL:
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 752--753
+Underfull \hbox (badness 2073) in paragraph at lines 780--781
 []\TU/times.ttf(0)/m/n/10.95 Nyein Aye Maung Maung , Win Zaw, Comparative Study
  of RSS-based Indoor Positio-
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 752--753
+Underfull \hbox (badness 1033) in paragraph at lines 780--781
 \TU/times.ttf(0)/m/n/10.95 ning Techniques on Two Different Wi-Fi Frequency Ban
 ds, IEEE, 24-27 June 2020, DOI:
  []
 
 
-Overfull \hbox (18.14568pt too wide) in paragraph at lines 753--754
+Overfull \hbox (18.14568pt too wide) in paragraph at lines 781--782
 \TU/times.ttf(0)/m/n/10.95 2018, URL: https://www.cabotsolutions.com/ble-vs-wi-
 fi-which-is-better-for-iot-product-development 
  []
@@ -930,31 +962,31 @@ fi-which-is-better-for-iot-product-development
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39
+ [42
 
 ]
-Overfull \hbox (46.09105pt too wide) in paragraph at lines 756--757
+Overfull \hbox (46.09105pt too wide) in paragraph at lines 784--785
 []\TU/times.ttf(0)/m/n/10.95 HC-05 Bluetooth Module User’s Manual V1.0 URL: htt
 ps://www.gme.cz/data/attachments/dsh.772-148.1.pdf 
  []
 
-[40] (main.lof)
+[43] (main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [41
+ [44
 
 ] (main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [42
+ [45
 
 ] (main.loa)
 \tf@loa=\write6
 \openout6 = `main.loa'.
 
- [43
+ [46
 
 ] (main.aux)
 
@@ -962,12 +994,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7943 strings out of 411271
- 169543 string characters out of 2828803
- 611128 words of memory out of 3000000
- 28223 multiletter control sequences out of 15000+600000
+ 8031 strings out of 411271
+ 171415 string characters out of 2828803
+ 611126 words of memory out of 3000000
+ 28311 multiletter control sequences out of 15000+600000
  413505 words of font info for 84 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 73i,12n,81p,1197b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,81p,1197b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (45 pages).
+Output written on main.pdf (48 pages).

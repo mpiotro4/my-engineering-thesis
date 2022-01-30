@@ -19,18 +19,18 @@
 \contentsline {section}{\numberline {4.3\relax .\enspace }Protokół komunikacyjny}{21}{}%
 \contentsline {chapter}{\numberline {5\relax .\enspace }Realizacja stacji usługowej}{23}{}%
 \contentsline {section}{\numberline {5.1\relax .\enspace }Aplikacja internetowa}{23}{}%
-\contentsline {section}{\numberline {5.2\relax .\enspace }Baza danych}{24}{}%
-\contentsline {section}{\numberline {5.3\relax .\enspace }Łączność bezprzewodowa}{25}{}%
-\contentsline {section}{\numberline {5.4\relax .\enspace }Węzeł}{26}{}%
-\contentsline {chapter}{\numberline {6\relax .\enspace }Testowanie}{28}{}%
-\contentsline {section}{\numberline {6.1\relax .\enspace }Testy niezawodności łączności bezprzewodowej}{28}{}%
-\contentsline {subsection}{\numberline {6.1.1\relax .\enspace }Układ pomiarowy}{28}{}%
-\contentsline {subsection}{\numberline {6.1.2\relax .\enspace }Środowisko testowe}{29}{}%
-\contentsline {subsection}{\numberline {6.1.3\relax .\enspace }Pomiary}{33}{}%
-\contentsline {subsection}{\numberline {6.1.4\relax .\enspace }Wnioski}{34}{}%
-\contentsline {section}{\numberline {6.2\relax .\enspace }Testy wersji demonstracyjnej stacji usługowej}{35}{}%
-\contentsline {chapter}{\numberline {7\relax .\enspace }Podsumowanie}{38}{}%
-\contentsline {chapter}{Bibliografia}{39}{}%
-\contentsline {chapter}{Spis rysunk\'ow}{41}{}%
-\contentsline {chapter}{Spis tabel}{42}{}%
-\contentsline {chapter}{Spis algorytmów\markboth {\MakeUppercase {Spis algorytmów}}{\MakeUppercase {Spis algorytmów}}}{43}{}%
+\contentsline {section}{\numberline {5.2\relax .\enspace }Baza danych}{25}{}%
+\contentsline {section}{\numberline {5.3\relax .\enspace }Łączność bezprzewodowa}{27}{}%
+\contentsline {section}{\numberline {5.4\relax .\enspace }Węzeł}{29}{}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Testowanie}{31}{}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Testy niezawodności łączności bezprzewodowej}{31}{}%
+\contentsline {subsection}{\numberline {6.1.1\relax .\enspace }Układ pomiarowy}{31}{}%
+\contentsline {subsection}{\numberline {6.1.2\relax .\enspace }Środowisko testowe}{32}{}%
+\contentsline {subsection}{\numberline {6.1.3\relax .\enspace }Pomiary}{36}{}%
+\contentsline {subsection}{\numberline {6.1.4\relax .\enspace }Wnioski}{37}{}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Testy wersji demonstracyjnej stacji usługowej}{38}{}%
+\contentsline {chapter}{\numberline {7\relax .\enspace }Podsumowanie}{41}{}%
+\contentsline {chapter}{Bibliografia}{42}{}%
+\contentsline {chapter}{Spis rysunk\'ow}{44}{}%
+\contentsline {chapter}{Spis tabel}{45}{}%
+\contentsline {chapter}{Listingi kodu\markboth {\MakeUppercase {Listingi kodu}}{\MakeUppercase {Listingi kodu}}}{46}{}%
