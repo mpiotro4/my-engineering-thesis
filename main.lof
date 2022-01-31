@@ -13,21 +13,21 @@
 \contentsline {figure}{\numberline {4.2.}{\ignorespaces Diagram stosu technologicznego stacji usługowej }}{20}{}%
 \contentsline {figure}{\numberline {4.3.}{\ignorespaces Elementy, które posłużyły do konstrukcji węzła, Arduino UNO i moduł Bluetooth HC-05}}{22}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1.}{\ignorespaces Zrzut ekranu działającego szkieletu aplikacji}}{25}{}%
-\contentsline {figure}{\numberline {5.2.}{\ignorespaces Szkic bazy danych}}{26}{}%
-\contentsline {figure}{\numberline {5.3.}{\ignorespaces Schemat blokowy algorytmu do nawiązywania łączności bezprzewodowej poprzez\,Bluetooth}}{28}{}%
-\contentsline {figure}{\numberline {5.4.}{\ignorespaces Schemat połączeń elektrycznych węzła sieci}}{29}{}%
+\contentsline {figure}{\numberline {5.1.}{\ignorespaces Zrzut ekranu działającego szkieletu aplikacji}}{24}{}%
+\contentsline {figure}{\numberline {5.2.}{\ignorespaces Szkic bazy danych}}{25}{}%
+\contentsline {figure}{\numberline {5.3.}{\ignorespaces Schemat blokowy algorytmu do nawiązywania łączności bezprzewodowej poprzez\,Bluetooth}}{27}{}%
+\contentsline {figure}{\numberline {5.4.}{\ignorespaces Schemat połączeń elektrycznych węzła sieci}}{28}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1.}{\ignorespaces Schemat układu pomiarowego}}{32}{}%
-\contentsline {figure}{\numberline {6.2.}{\ignorespaces Schemat środowiska testowego nr 1.}}{33}{}%
-\contentsline {figure}{\numberline {6.3.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr 1.}}{34}{}%
+\contentsline {figure}{\numberline {6.1.}{\ignorespaces Schemat układu pomiarowego}}{31}{}%
+\contentsline {figure}{\numberline {6.2.}{\ignorespaces Schemat środowiska testowego nr 1.}}{32}{}%
+\contentsline {figure}{\numberline {6.3.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr\nobreakspace {}1.}}{33}{}%
 \contentsline {figure}{\numberline {6.4.}{\ignorespaces Schemat środowiska testowego nr 2 - parter.}}{34}{}%
-\contentsline {figure}{\numberline {6.5.}{\ignorespaces Schemat środowiska testowego nr 2 - pierwsze piętro.}}{35}{}%
-\contentsline {figure}{\numberline {6.6.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr 2.}}{35}{}%
+\contentsline {figure}{\numberline {6.5.}{\ignorespaces Schemat środowiska testowego nr 2 - pierwsze piętro.}}{34}{}%
+\contentsline {figure}{\numberline {6.6.}{\ignorespaces Moce poszczególnych sygnałów Wi-Fi w otoczeniu nadajnika w środowisku testowym nr\nobreakspace {}2.}}{35}{}%
 \contentsline {figure}{\numberline {6.7.}{\ignorespaces Widok dodawania nowego węzła.}}{38}{}%
-\contentsline {figure}{\numberline {6.8.}{\ignorespaces Widok dodawania nowego węzła po wpisaniu adresu MAC.}}{39}{}%
+\contentsline {figure}{\numberline {6.8.}{\ignorespaces Widok dodawania nowego węzła po wpisaniu adresu MAC.}}{38}{}%
 \contentsline {figure}{\numberline {6.9.}{\ignorespaces Komunikat informujący o pomyślnym dodaniu węzła.}}{39}{}%
-\contentsline {figure}{\numberline {6.10.}{\ignorespaces Widok zarządzania węzłami}}{40}{}%
+\contentsline {figure}{\numberline {6.10.}{\ignorespaces Widok zarządzania węzłami}}{39}{}%
 \contentsline {figure}{\numberline {6.11.}{\ignorespaces Widok szczegółów dotyczących danego węzła}}{40}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
